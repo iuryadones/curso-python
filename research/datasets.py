@@ -62,7 +62,7 @@ if __name__ == '__main__':
                     writer.writeheader()
                 for data in dict_data:
                     for i in range(len(x)):
-                        data.update({f'coef_{i}' = coef[i]})
+                        data.update({f'coef_{i}': coef[i]})
                     data.update({'x': X,'num_pool':p, 'runs': runs})
                     writer.writerow(data)
         except IOError:
