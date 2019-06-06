@@ -26,8 +26,6 @@ def main(coef,x,n):
     end_time = timer()
 
     dic = {
-        'n': n,
-        'result': result,
         'timer': (end_time - started_time)
     }
     return dic
@@ -42,7 +40,7 @@ if __name__ == '__main__':
 
     p_main = partial(main,list_coef,X)
 
-    RUN = 200000
+    RUN = 20
     for _ in range(RUN):
         p = randint(1,100)
         runs = randint(1,100)
