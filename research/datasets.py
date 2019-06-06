@@ -33,16 +33,19 @@ def main(coef,x,n):
     return dic
 
 if __name__ == '__main__':
-    n = 17
-    coef = coef_rand(n)
-    X = x_rand()
+    n = 18
+    X = 3
+    list_coef = coef_rand(n)
+    with open('coefs.txt','w') as arq:
+        for _coef in list_coef:
+            arq.write(f'{_coef}\n')
+
+    p_main = partial(main,list_coef,X)
+
     RUN = 200000
-    
     for _ in range(RUN):
         p = randint(1,100)
         runs = randint(1,100)
-        
-        p_main = partial(main,coef,X)
 
         pool = Pool(p)
         dict_data = pool.map(p_main, (n for _ in range(runs)))
@@ -50,6 +53,7 @@ if __name__ == '__main__':
         pool.join()
 
         csv_columns = list(dict_data[0].keys()) + ['num_pool','runs']
+
         csv_file = "datasets.csv"
         try:
             if csv_file in os.listdir():
@@ -61,9 +65,7 @@ if __name__ == '__main__':
                 if type_file == 'w':
                     writer.writeheader()
                 for data in dict_data:
-                    for i in range(len(x)):
-                        data.update({f'coef_{i}': coef[i]})
-                    data.update({'x': X,'num_pool':p, 'runs': runs})
+                    data.update({'num_pool':p, 'runs': runs})
                     writer.writerow(data)
         except IOError:
             print("I/O error")
