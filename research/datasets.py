@@ -42,8 +42,8 @@ if __name__ == '__main__':
 
     RUN = 20
     for _ in range(RUN):
-        p = randint(1,100)
-        runs = randint(1,100)
+        p = randint(1,20)
+        runs = randint(1,20)
 
         pool = Pool(p)
         dict_data = pool.map(p_main, (n for _ in range(runs)))

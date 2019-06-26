@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="Python Script" position="(150, 150)" project_name="Orange3" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" title="Python Script" version="" />
+	</nodes>
+	<links />
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEgAAAGN1cnJlbnRTY3JpcHRJbmRleHEC
+SwBYEQAAAGxpYnJhcnlMaXN0U291cmNlcQNdcQRjT3JhbmdlLndpZGdldHMuZGF0YS5vd3B5dGhv
+bnNjcmlwdApTY3JpcHQKcQUpgXEGfXEHKFgEAAAAbmFtZXEIWAoAAAByZWFkX2ltYWdlcQlYBgAA
+AHNjcmlwdHEKWBcAAABmcm9tIHNraW1hZ2UgaW1wb3J0IGlvCnELWAUAAABmbGFnc3EMSwBYCAAA
+AGZpbGVuYW1lcQ1OdWJhWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQ5DMgHZ0MsAAgAAAAABEwAA
+ACEAAARCAAACnwAAARsAAABAAAAEOgAAApcAAAAAAAAAAAVWcQ9YCgAAAHNjcmlwdFRleHRxEFgX
+AAAAZnJvbSBza2ltYWdlIGltcG9ydCBpbwpxEVgNAAAAc3BsaXR0ZXJTdGF0ZXESTlgLAAAAX192
+ZXJzaW9uX19xE0sBdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
